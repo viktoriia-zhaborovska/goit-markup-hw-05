@@ -651,8 +651,6 @@ li:hover p {
   display: flex;
   flex-direction: column;
 
-  width: 360px;
-  height: 336px;
   background: #fcfcfc;
 }
 
