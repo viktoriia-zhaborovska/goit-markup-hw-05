@@ -590,6 +590,7 @@ li:hover p {
   background-color: #fcfcfc;
 
   padding: 72px 24px 24px 24px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop:not(.is-open) .modal {
@@ -650,8 +651,11 @@ li:hover p {
 
   width: 360px;
   height: 336px;
-
   background: #fcfcfc;
+}
+
+.form-field {
+  margin-bottom: 8pxltw1;
 }
 .input-wrapper {
   position: relative;
@@ -680,7 +684,7 @@ li:hover p {
   margin-bottom: 4px;
 }
 
-.modal-input.comm {
+.modal-input.comment {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   font-size: 12px;
@@ -694,12 +698,17 @@ li:hover p {
   outline: transparent;
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 16px;
 }
 
 .modal-input.comm::placeholder {
   color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   line-height: 1.17;
+}
+
+.modal-input.comment:focus {
+  border-color: #4d5ae5;
 }
 
 .form-icon {
