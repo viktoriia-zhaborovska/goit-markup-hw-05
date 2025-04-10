@@ -531,7 +531,7 @@
             </li>
           </ul>
         </div>
-         <div class="footer-sbcr">
+        <div class="footer-sbcr">
           <p class="sbcr-title">Subscribe</p>
           <form class="footer-form">
             <label aria-label="footer-email" class="footer-label">
@@ -614,17 +614,26 @@
                 rows="5"
                 placeholder="Text input"
               ></textarea>
-         <div class="checkbox"><input type="checkbox" class="check-inp visually-hidden" name="user-privacy" value="true"/>
-            <label class="check-lbl"
-              ><span class="modal-span"><svg class="check-icon" width="16" height="16">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg></span> I accept the terms and conditions of the&nbsp;
-                <a href=""  class="checkbox-link">Privacy Policy</a>
             </label>
-            </div> 
+            <div class="checkbox">
+              <input
+                type="checkbox"
+                id="user-privacy"
+                class="check-inp visually-hidden"
+                name="user-privacy"
+                value="true"
+              />
+              <label class="check-lbl" for="user-privacy"><span class="modal-span"
+                  ><svg class="check-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-check"></use></svg></span>
+                I accept the terms and conditions of the&nbsp;
+                <a href="" class="checkbox-link">Privacy Policy</a>
+              </label>
+            </div>
+            </div>
           </div>
 
-        <button class="subm-btn" type="submit">Send</button>
+          <button class="subm-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
