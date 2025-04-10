@@ -647,6 +647,10 @@ li:hover p {
 .form {
   display: flex;
   flex-direction: column;
+
+  width: 360px;
+  height: 336px;
+
   background: #fcfcfc;
 }
 .input-wrapper {
@@ -655,13 +659,15 @@ li:hover p {
 
 .modal-input {
   padding: 4px;
-  width: 100%;
-  height: 40px;
+  color: #212121;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 8px;
-  padding-left: 38px;
+  width: 100%;
+  height: 40px;
   background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-lable {
@@ -726,6 +732,15 @@ li:hover p {
   color: #4d5ae5;
 }
 
+.check-lbl {
+  line-height: 1.17;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  align-items: center;
+}
+
 .modal-span {
   width: 16px;
   height: 16px;
@@ -745,7 +760,7 @@ li:hover p {
   fill: transparent;
 }
 
-.check-inp:checked + .checkbox-text .modal-span {
+.check-inp :checked + .checkbox-lbl .modal-span {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
