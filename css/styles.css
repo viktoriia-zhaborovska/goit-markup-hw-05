@@ -503,7 +503,7 @@ li:hover p {
 }
 
 .footer-input {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 4px;
   width: 264px;
   height: 40px;
@@ -520,7 +520,7 @@ li:hover p {
 .sbcr-btn {
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   font-weight: 500;
@@ -529,6 +529,7 @@ li:hover p {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  border: none;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: flex;
@@ -550,7 +551,7 @@ li:hover p {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: #ffffff;
 }
 
 /*backdrop*/
@@ -655,7 +656,7 @@ li:hover p {
 }
 
 .form-field {
-  margin-bottom: 8pxltw1;
+  margin-bottom: 8px;
 }
 .input-wrapper {
   position: relative;
@@ -684,7 +685,10 @@ li:hover p {
   margin-bottom: 4px;
 }
 
-.modal-input.comment {
+.form-field.comment {
+  margin-bottom: 16px;
+}
+.text-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   font-size: 12px;
@@ -701,13 +705,13 @@ li:hover p {
   margin-bottom: 16px;
 }
 
-.modal-input.comm::placeholder {
+.text-input::placeholder {
   color: rgba(46, 47, 66, 0.4);
   font-size: 12px;
   line-height: 1.17;
 }
 
-.modal-input.comment:focus {
+.text-input:focus {
   border-color: #4d5ae5;
 }
 
@@ -769,7 +773,7 @@ li:hover p {
   fill: transparent;
 }
 
-.check-inp :checked + .checkbox-lbl .modal-span {
+.check-inp:checked + .modal-span {
   border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
