@@ -547,7 +547,8 @@ li:hover p {
   fill: #fff;
 }
 
-.sbcr-btn:hover {
+.sbcr-btn:hover,
+.sbcr-btn:focus {
   background-color: #404bbf;
 }
 
@@ -719,7 +720,6 @@ li:hover p {
   outline: transparent;
   padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 16px;
 }
 
 .text-input::placeholder {
@@ -800,5 +800,11 @@ li:hover p {
   cursor: pointer;
   border: none;
   display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subm-btn:hover,
+.subm-btn:focus {
+  background-color: #404bbf;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
