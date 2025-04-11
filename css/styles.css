@@ -803,7 +803,10 @@ li:hover p {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subm-btn:hover,
+.subm-btn:hover {
+  background-color: #404bbf;
+}
+
 .subm-btn:focus {
   background-color: #404bbf;
 }
